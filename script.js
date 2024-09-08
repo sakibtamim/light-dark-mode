@@ -1,16 +1,9 @@
-// const toggleSwitch = document.querySelector('input[type="checkbox"]');
-
-// // switch theme dynamically
-// function switchTheme(event){
-//     console.log(event);
-// }
-
-// // event listenser
-// toggleSwitch.addEventListener('change', switchTheme);
-
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
 
+// switch theme dynamically
+function switchTheme(event){
+    console.log(event.target.checked);
+}
 
-toggleSwitch.addEventListener('change', function () {
-    console.log(this.checked); // true if checked, false if not
-});
+// event listenser
+toggleSwitch.addEventListener('change', switchTheme);
